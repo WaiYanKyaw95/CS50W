@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* the whole page flex set-up */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* list and anchor styling */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a,
+.location {
+    font-size: 14px;
+}
+
+/* navigation flex set-up */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > ul {
+    display: flex;
+    padding: 1em;
+    gap: 2em;
+}
+
+/* query section set-up */
+
+.query {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 20em;
+    height: auto;
+    display: block;
+}
+
+input {
+    margin: 0.5em;
+}
+
+input[type=text] {
+    width: 30em;
+    padding: 1em 1em;
+    border-radius: 50em;
+}
+
+input[type=submit] {
+    width: 10em;
+    padding: 0.5em 0;
+    border-radius: 50em;
+}
+
+/* footer section set-up */
+
+footer {
+    background-color: whitesmoke;
+}
+
+.location,
+.footer-links {
+    padding: 1em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(225, 225, 225);
+}
+
+.left-links-bottom > ul,
+.right-links-bottom > ul {
+    display: flex;
+    gap: 1em;
+}
+
