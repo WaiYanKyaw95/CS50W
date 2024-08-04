@@ -5,58 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Search</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="advanced-style.css">
 </head>
 <body>
-    <header>
-        <!-- <img id="g-search" src="./Assets/Google-logo.png" alt="Google logo"> -->
-    </header>
-
-    <main>
-        <div class="advanced-search-bar">
-            <h1>Advanced Search</h1>
+    <div class="container">
+        <header>
+            <img id="g-search" src="./Assets/Google-logo.png" alt="Google logo">
+            <ul>
+                <li><a href="./index.html">Google Search</a></li>
+            </ul>
+        </header>
+    
+        <div class="main">
+            <div class="advanced-search-bar">
+                <h1>Advanced Search</h1>
+            </div>
+            <div class="advanced-search-form">
+                <form method="get" action="https://www.google.com/search" name="f">
+                    <div class="advanced-search-section">
+                        <div class="advanced-search-each-line">
+                            <p>Find pages with...</p>
+                        </div>
+                        <div class="advanced-search-each-line">
+                            <p>all these words:</p>
+                            <input type="text" name="as_q" class="advanced-search-input" autofocus="autofocus">
+                        </div>
+                        <div class="advanced-search-each-line">
+                            <p>this exact word or phrase:</p>
+                            <input type="text" name="as_epq" class="advanced-search-input" autofocus="autofocus">
+                        </div>
+                        <div class="advanced-search-each-line">
+                            <p>any of these words:</p>
+                            <input type="text" name="as_oq" class="advanced-search-input" autofocus="autofocus">
+                        </div>
+                        <div class="advanced-search-each-line">
+                            <p>none of these words:</p>
+                            <input type="text" name="as_eq" class="advanced-search-input" autofocus="autofocus">
+                        </div>
+                        <div class="search-button">
+                            <input type="submit" value="Advanced Search">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <form method="get" action="https://www.google.com/search" name="f">
-            <div class="advanced-search-section">
-                <div class="advanced-search-each-line">
-                    <p>Find pages with...</p>
+        <div class="footer">
+            <footer>
+                <div class="location">
+                    Somewhere on the earth ...
                 </div>
-                <div class="advanced-search-each-line">
-                    <p>all these words:</p>
-                    <input type="text" name="as_q" class="advanced-search-input" autofocus="autofocus">
+                <div class="footer-links">
+                    <div class="left-links-bottom">
+                        <ul>
+                            <li><a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-AE&fg=1">Help</a></li>
+                            <li><a href="https://policies.google.com/privacy?hl=en-AE&fg=1">Privacy</a></li>
+                            <li><a href="https://policies.google.com/terms?hl=en-AE&fg=1">Terms</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="advanced-search-each-line">
-                    <p>this exact word or phrase:</p>
-                    <input type="text" name="as_epq" class="advanced-search-input" autofocus="autofocus">
-                </div>
-                <div class="advanced-search-each-line">
-                    <p>any of these words:</p>
-                    <input type="text" name="as_oq" class="advanced-search-input" autofocus="autofocus">
-                </div>
-                <div class="advanced-search-each-line">
-                    <p>none of these words:</p>
-                    <input type="text" name="as_eq" class="advanced-search-input" autofocus="autofocus">
-                </div>
-                <div class="search-button">
-                    <input type="submit" value="Advanced Search">
-                </div>
-            </div>
-        </form>
-        
-        <footer>
-            <div class="location">
-                Somewhere on the earth ...
-            </div>
-            <div class="footer-links">
-                <div class="left-links-bottom">
-                    <ul>
-                        <li><a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-AE&fg=1">Help</a></li>
-                        <li><a href="https://policies.google.com/privacy?hl=en-AE&fg=1">Privacy</a></li>
-                        <li><a href="https://policies.google.com/terms?hl=en-AE&fg=1">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </main>
+                
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
