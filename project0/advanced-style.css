@@ -29,6 +29,10 @@ a {
     color: #1F1F1F;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* header section */
 
 img {
